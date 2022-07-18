@@ -9,6 +9,7 @@
   --white-bgrnd: #f5f4fa;
   --border: #ececec;
   --portfolio-border: #eee;
+  --icon-color: #afb1b8;
 }
 body {
   color: var(--grey-color);
@@ -83,6 +84,7 @@ header {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url();
   background: var(--background);
 }
 .hero-title {
@@ -182,7 +184,7 @@ header {
 }
 
 .team-role {
-
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
 }
@@ -307,7 +309,9 @@ address {
   padding-bottom: 32px;
 }
 .contact-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding-bottom: 32px;
   padding-top: 32px;
 }
@@ -339,3 +343,66 @@ address {
 .card-item {
   flex-basis: calc((100% - 90px) / 3) ;
 }
+
+.contact-icon{
+  fill: currentColor;
+  align-self: center;
+}
+.contact-icon:hover, .contact-icon:focus{
+  color: var(--brand-color);
+}
+.characteristic-img-container{
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+
+  background-color: var(--white-bgrnd);
+}
+.characteristic-img {
+  align-self: center;
+
+}
+
+.team-media {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.soc-media {
+  padding: 12px 12px;
+}
+
+.soc-media:hover, .soc-media:focus {
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  background-color: var(--brand-color);
+}
+
+.soc-media-icon {
+  fill: var(--icon-color);
+  align-self: center;
+}
+.soc-media-icon:hover, .soc-media-icon:focus {
+  fill: var(--white-color);
+}
+.client-link {
+
+}
+.clients-item {
+  width: calc((100% - 150px) / 6);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+.client-logo{
+  align-self: center;
+  fill: var(--icon-color);
+}
+.client-logo:hover, .client-logo:focus{
+  fill: var(--brand-color);
+}
+
