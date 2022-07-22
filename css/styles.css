@@ -75,11 +75,11 @@ header {
   color: var(--black-color);
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link:focus {
   color: var(--brand-color);
 }
 
-.contact-link:hover {
+.contact-link:hover, .contact-link:focus {
   color: var(--brand-color);
 }
 
@@ -202,6 +202,9 @@ header {
 
 .address-link {
   color: var(--transp-white);
+}
+.address-link:hover, .address-link:focus{
+  color: var(--brand-color);
 }
 
 .filter-list {
@@ -419,7 +422,7 @@ address {
 .footer-container {
   display: flex;
   gap: 70px;
-  align-items: baselines;
+  align-items: baseline;
 }
 
 
@@ -430,6 +433,7 @@ address {
   margin-bottom: 20px;
   color: var(--white-color);
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
